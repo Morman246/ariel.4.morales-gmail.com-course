@@ -1,0 +1,16 @@
+title: ariel.4.morales@gmail.com
+description: ME ENCANTA EL SKYPE ESTA MUY BUENO
+template:
+  repo: ariel.4.morales@gmail.com-template
+  name: ariel.4.morales@gmail.com
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
